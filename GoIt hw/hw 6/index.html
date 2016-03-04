@@ -48,11 +48,13 @@
               <li><a href="#">СТАТЬИ</a></li>
               <li><a href="#">КОНТАКТЫ</a></li>
            </ul>
-           <ul class="second_part">
+            <ul class="second_part">
+            <li>на сумму: <span> 0,00 грн.</span></li>
              <li><p><img src="img/basket.png" alt="icon" />товаров:<span>0</span></p></li>
-             <li>на сумму: <span> 0,00 грн.</span></li>
+             
            </ul>
         </div>
+        
       <!--END OF MENU-->
 
 
@@ -67,7 +69,7 @@
       <form class="auto_search_form" action="index.html" method="post"> <!--start of first form-->
         <div class="auto_disk_search">
             <div class="car_brand">
-                <p> Марка <span>авто:</span></p>
+                <p> Марка<span>авто:</span></p>
                 <select size = "1" multiple name = "name[]">
                   <option value = "Audi">Audi</option>
                   <option value = "Sckoda">Sckoda</option>
@@ -183,11 +185,12 @@
 
  <!--end of third form-->
    <div class="disks_search">
+       
         <form class="disks_search_form1" action="index.html" method="post">
           <div class="disks_search_header">
             <p>ПОИСК ДИСКОВ </p>
           </div>
-          <div class="disks_diametr">
+          <div class="disks_diametr ml">
             <p> Диаметр <span>диска </span>: </p>
              <select size = "1" multiple name = "name[]">
               <option value = "20">20</option>
@@ -195,7 +198,7 @@
               <option value = "40">40</option>
             </select>
           </div>
-          <div class="disks_amount">
+          <div class="disks_amount ml">
             <p> Количество <span><br>крепёжных <br>отверстий</span>:</p>
              <select size = "1" multiple name = "name[]">
               <option value = "20">20</option>
@@ -203,7 +206,7 @@
               <option value = "40">40</option>
             </select>
           </div>
-          <div class="disks_diametr">
+          <div class="disks_diametr ml">
             <p> Диаметр  <span><br>расположения <br>крепёжных <br>отверстий </span>:</p>
              <select size = "1" multiple name = "name[]">
               <option value = "20">20</option>
@@ -229,7 +232,9 @@
             </div>
           </div>
           </div>
+           <div class="searching3"><a href="#"> Поиск... </a></div>
         </form>
+        
      </div><!--end of third form-->
 </figure>
 <!--END OF SEARCH FORMS-->
@@ -238,34 +243,38 @@
       <div class="conteiner">
          <div class="sidebar">
              <ul class="catalog">
-              <li><p><img src="img/catalog.png" alt="icon" />КАТАЛОГ ПРОДУКЦИИ:</p></li>
+              <li><img src="img/catalog.png" alt="icon" /><p>КАТАЛОГ ПРОДУКЦИИ:</p></li>
               </ul>
-              <ul>
-                   <li class="products"><p><img src="img/button.png" alt="icon" />ШИНЫ</p>
-                      <ul>
+              
+                   <div class="products"><img src="img/button.png" alt="icon" />
+                     <p>ШИНЫ</p>
+                      
+                   </div>
+                   <ul class="product">
                         <li><a href="#">Наименование 1</a></li>
                         <li><a href="#">Наименование 2</a></li>
                         <li><a href="#">Наименование 3</a></li>
                         <li><a href="#">Наименование 4</a></li>
                       </ul>
-                   </li>
-                   <li class="products"><p><img src="img/button.png" alt="icon" />ДИСКИ</p>
-                      <ul>
+                   <div class="products"><img src="img/button.png" alt="icon" /><p>ДИСКИ</p>
+                     
+                   </div>
+                    <ul class="product">
                         <li><a href="#">Наименование 1</a></li>
                         <li><a href="#">Наименование 2</a></li>
                         <li><a href="#">Наименование 3</a></li>
                         <li><a href="#">Наименование 4</a></li>
                       </ul>
-                   </li>
-                   <li class="products"><p><img src="img/button.png" alt="icon" />БОЛТЫ</p>
-                      <ul>
+                   <div class="products"><img src="img/button.png" alt="icon" /><p>БОЛТЫ</p>
+                     
+                   </div>
+                    <ul class="product">
                         <li><a href="#">Наименование 1</a></li>
                         <li><a href="#">Наименование 2</a></li>
                         <li><a href="#">Наименование 3</a></li>
                         <li><a href="#">Наименование 4</a></li>
                       </ul>
-                   </li>
-                 </ul>
+                 
           </div>
           <div class="content">
               <div class="1_row">
@@ -325,19 +334,19 @@
               </div>
          </div>
         <div class="aside">
-            <div class="brends">
-              <p><img src="img/catalog.png" alt="icon" />БРЕНДЫ:</p></div>
+            <ul class="catalog">
+              <li><img src="img/catalog.png" alt="icon" /><p>БРЕНДЫ:</p></li>
+              </ul>
+          <form class="products-2" action="index.html" method="post">
+              <div class="products"><img src="img/button.png" alt="icon" /><p>ШИНЫ</p></div>
+                <div class="mt10"><input type="checkbox" id="checkbox_1"> <label for="checkbox_1">Бренд 1 </label></div>
+                <div class="mt10"><input type="checkbox" id="checkbox_2"> <label for="checkbox_2">Бренд 2 </label></div>
+                <div class="mt10"><input type="checkbox" id="checkbox_3"> <label for="checkbox_3">Бренд 3 </label></div>
 
-              <form class="products-2" action="index.html" method="post">
-                <p><img src="img/button.png" alt="icon" />ШИНЫ</p>
-                <div><input type="checkbox" id="checkbox_1"> <label for="checkbox_1">Бренд 1 </label></div>
-                <div><input type="checkbox" id="checkbox_2"> <label for="checkbox_2">Бренд 2 </label></div>
-                <div><input type="checkbox" id="checkbox_3"> <label for="checkbox_3">Бренд 3 </label></div>
-
-                <p><img src="img/button.png" alt="icon" />ДИСКИ</p>
-                <div><input type="checkbox" id="checkbox_4"> <label for="checkbox_4">Бренд 1 </label></div>
-                <div><input type="checkbox" id="checkbox_5"> <label for="checkbox_5">Бренд 2 </label></div>
-                <div><input type="checkbox" id="checkbox_6"> <label for="checkbox_6">Бренд 3 </label></div>
+              <div class="products mtop"><img src="img/button.png" alt="icon" /><p>ДИСКИ</p></div>
+                <div class="mt10"><input type="checkbox" id="checkbox_4"> <label for="checkbox_4">Бренд 1 </label></div>
+                <div class="mt10"><input type="checkbox" id="checkbox_5"> <label for="checkbox_5">Бренд 2 </label></div>
+                <div class="mt10"><input type="checkbox" id="checkbox_6"> <label for="checkbox_6">Бренд 3 </label></div>
 
                 <div> <input type="submit" class="submit" value="ВЫБРАТЬ"> </div>
               </form>
@@ -369,7 +378,7 @@
          </ul>
          <p>Создание сайта &#169;Global Vision</p>
       </footer>
-<!--START OF FOOTER-->
+<!--END OF FOOTER-->
 
   </div> <!--end of wrapper-->
 </body>
